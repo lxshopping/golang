@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
-source '.architectures-lib'
+source 'golang/.architectures-lib'
 
 versions=( "$@" )
 if [ ${#versions[@]} -eq 0 ]; then
