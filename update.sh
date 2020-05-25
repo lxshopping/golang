@@ -3,8 +3,6 @@ set -Eeuo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
-source '/golang/.architectures-lib'
-
 versions=( "$@" )
 if [ ${#versions[@]} -eq 0 ]; then
 	versions=( */ )
